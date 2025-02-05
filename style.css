@@ -289,8 +289,8 @@ input, select {
 .section3{
     padding: 100px 100px;
     box-sizing: border-box;
-    background-color: #e8e8e8;
-    height: 600px;
+    background-color: #ececec;
+    height: 768px;
     width: 100%;
     
 }
@@ -314,17 +314,26 @@ input, select {
 
 .content1{
     width: 49.1%;
+    height: 50%;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(195, 76, 76, 0.1);
     border: 1px solid rgb(204, 204, 204);
     /* box-shadow: rgb(159, 159, 159) 2px 2px 2px; */
     margin: 4px;
     justify-content: space-around;
     text-align: center;
     justify-content: center;
-    align-content: center;
+    
+}
+
+.content1 img{
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+   
 }
 
 
