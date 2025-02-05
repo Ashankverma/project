@@ -10,7 +10,7 @@ body{
 }
 
 .leftscroll{
-    width: 80%;
+    width: 80vw;
 }
 .navbar{
     background-color: rgb(0, 73, 137);
@@ -288,9 +288,10 @@ input, select {
 
 .section3{
     padding: 100px 100px;
+    box-sizing: border-box;
     background-color: #e8e8e8;
     height: 600px;
-    width: 80%;
+    width: 100%;
     
 }
 
