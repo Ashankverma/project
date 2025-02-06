@@ -13,7 +13,7 @@ body{
     width: 80vw;
 }
 .navbar{
-    background-color: rgb(0, 73, 137);
+    /* background-color: rgb(0, 73, 137); */
     color: white;
     height: 80px;
     display: flex;
@@ -21,8 +21,13 @@ body{
     list-style: none;
     justify-content: right;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 0px;
     font-size: 16px;
+    width: 80%;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
 .navbar a{
@@ -30,7 +35,6 @@ body{
     color: white;
     padding: 6px 16px;
 }
-
 
 .navbar a.active{
     text-decoration: none;
@@ -47,15 +51,20 @@ body{
 }
 
 .banner{
+    width: 100%;
     background-color: blueviolet;
     border: 20px red;
     height: 80vh;
     display: flex;
+    /* position: absolute; */
+    top: 0px;
+    left: 0px;
     justify-content: center;
     align-items: center;
-    background-image: url(\image1.jpg);
+    background-image: url(\image1.png);
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .banner h1{
@@ -79,7 +88,6 @@ body{
     top: 0px;
     /* border-radius: 30px 30px 30px 30px; */
 }
-
 
 .container {
     background: white;
@@ -174,12 +182,21 @@ input, select {
     width: 100%;
     margin-top: 20px;
 }
+.register-btn-wsp{
+    background: rgb(9, 155, 19);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
 
 .register-btn:hover, .callback-btn:hover {
     background: #704a2a;
 }
-
-
 
 .info{
     color: rgb(122, 122, 122);
@@ -200,7 +217,7 @@ input, select {
 
 
 
-/* ======================================================= */
+/*hero card ======================================================= */
 
 
 .card {
@@ -266,17 +283,16 @@ input, select {
     margin-top: 10px;
 }
 /* Section 2------------------------------------------------- */
-.section2 {
+.section2, .section5 {
     padding: 60px 100px;
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    text-align: center;
+    
 }
 
-.section2 p{
+.section2, .section5, p{
     font-size: 16px;
     line-height: 1.8;
     text-align:justify;
@@ -289,7 +305,7 @@ input, select {
 .section3{
     padding: 100px 100px;
     box-sizing: border-box;
-    background-color: #ececec;
+    background-color: rgb(232, 244, 255);
     height: 768px;
     width: 100%;
     
@@ -336,7 +352,158 @@ input, select {
    
 }
 
+/* Section 4 ------------------------------------------ */
 
+.section4{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #bdbdbd; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 0px;
+}
 
+.section4 h1{
+    padding: 20px;
+}
 
+.section4 div a{
+    padding: 0px 6px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+}
 
+.boxbhk{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(245, 245, 245);
+    align-self: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.boxbhk img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.section5 {
+    background-color:rgb(232, 244, 255) ;
+}
+
+.section5 ul li{
+    background-color: #666;
+}
+
+.section5 h3{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.item-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0px;
+    box-sizing: border-box;
+    gap: 20px;
+    /* background-color: #666; */
+    width: 100%;
+    text-align: left;
+}
+
+.item1{
+    padding-left: 40px;
+}
+
+/* section 6---------------------------------------------- */
+
+.section6{
+    /* background-color: #666; */
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.video-sec{
+    display: flex;
+    width:100%;
+    /* background-color: #966969; */
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.video{
+    border-radius: 20px;
+    /* margin: 10px; */
+    background-color: aliceblue;
+    width: 60%;
+    height: 40vh;
+    overflow: hidden;
+    box-shadow: grey 5px 5px 10px;
+}
+
+.video video{
+    object-fit:fill;
+}
+
+.video-des{
+    border-radius: 20px;
+    /* margin: 10px; */
+    background-color: aliceblue;
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.slider{
+    width: 100%;
+    height: 170px;
+    background-color: #704a2a;
+    position: relative;
+}
+
+.row{
+    width: 100%;
+    /* background-color: #666; */
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+}
+
+.coloum{
+    /* float: left; */
+    width: 33%;
+    /* padding: 10px; */
+    /* margin: 5px; */
+    /* background-color: #966969; */
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+/* .coloum:hover{
+    filter: grayscale(1);
+    scale: 1.1;
+    box-shadow: grey 0px 0px 10px;
+} */
+
+.btn{
+    text-align: center;
+}
+
+.btn button{
+    padding: 6px 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
