@@ -20,6 +20,47 @@ p{
     color: #7c7c7c;
 }
 
+.bg-circle-1{
+    position: absolute;
+    z-index: -1;
+    top: 800px;
+    right: -400px;
+    width: 800px;
+    height: 800px;
+    background-color: #052692;
+    opacity: 10%;
+    border-radius: 500px;
+    
+}
+
+.bg-circle-2{
+    position: absolute;
+    z-index: -1;
+    top: 1600px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    background-color: #052692;
+    opacity: 10%;
+    border-radius: 500px;
+    
+}
+
+
+.bg-circle-3{
+    position: absolute;
+    z-index: -1;
+    top: 2400px;
+    right: -400px;
+    width: 800px;
+    height: 800px;
+    background-color: #052692;
+    opacity: 10%;
+    border-radius: 500px;
+    
+}
+
+
 /*--------------------------------------------------------  */
 
 .stock-ticker{
@@ -142,6 +183,7 @@ p{
 
 .leftscroll{
     /* background-color: #333; */
+    overflow: hidden;
     width: 80%;
     position: relative;
 }
@@ -457,7 +499,7 @@ input, select {
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgb(195, 76, 76, 0.1);
+    background-color: rgba(35, 25, 168, 0.100);
     border: 1px solid rgb(204, 204, 204);
     /* box-shadow: rgb(159, 159, 159) 2px 2px 2px; */
     margin: 4px;
