@@ -1,26 +1,61 @@
-const slider = document.querySelectorAll(".slide")
-// console.log(slide);
-var counter = 0;
+const slides = document.querySelector('.slides');
+const slideCount = document.querySelectorAll('.slide').length;
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
 
-slide.forEach(
-    ()
-)
+let currentIndex = 0;
 
-// const goPrev = () =>{
-//     counter--
-//     alert()
-//     slideImage()
-// }
+function updateSlidePosition() {
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-// const goNext = () =>{
-//     counter++
-//     slideImage()
-// }
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slideCount;
+  updateSlidePosition();
+});
 
-// const slideImage = () =>{
-//     slide.forEach(
-//         (row)=>{
-//             row.style.transform='translateX(-${counter * 100}%)'
-//         }
-//     )
-// }
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+  updateSlidePosition();
+});
+
+
+
+
+// -----------------------------------------------------------------
+
+
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+        let answer = item.nextElementSibling;
+        let plusSign = item.querySelector('.plus');
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+            plusSign.textContent = '+';
+        } else {
+            answer.style.display = 'block';
+            plusSign.textContent = '−';
+        }
+    });
+});
+
+// popup----------------------------------------------------
+
+window.onload = function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+};
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+};
+
+btnpopup.onclick = function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+};
+function openPopup(){
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+}
+
