@@ -404,6 +404,7 @@ input, select {
     width: 100%;
     margin-top: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .register-btn:hover, .callback-btn:hover {
