@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
-<body>
-    <!-- <div class="aside">
+
+<aside>
+    <!-- Dummy commnet -->
+    <div class="aside">
 
         <div class="container">
             <button class="callback-btn">🚀 Request Call Back</button>
@@ -22,55 +30,74 @@
 
                 <label for="mobile">Mobile No</label>
                 <div class="mobile-input">
-                    <select id="country-code">
-                        <option value="+91">🇮🇳 +91</option>
-                        <option value="+1">🇺🇸 +1</option>
-                        <option value="+44">🇬🇧 +44</option>
-                    </select>
+
                     <input type="text" id="mobile" placeholder="Mobile No">
                 </div>
 
                 <label for="email">E-Mail Address</label>
                 <input type="email" id="email" placeholder="E-Mail Address">
 
+                <label for="email">City</label>
+                <input type="email" id="email" placeholder="City">
 
-                <label for="cities">Choose a city:</label>
-                <select id="cities" name="cities">
-                    <option value="" disabled selected>Select your city</option>
-                    <option value="Bijnor">Bijnor</option>
-                    <option value="los-angeles">Los Angeles</option>
-                    <option value="chicago">Chicago</option>
-                    <option value="houston">Houston</option>
-                    <option value="phoenix">Phoenix</option>
-                    <option value="philadelphia">Philadelphia</option>
-                    <option value="san-antonio">San Antonio</option>
-                    <option value="san-diego">San Diego</option>
-                    <option value="dallas">Dallas</option>
-                    <option value="san-jose">San Jose</option>
-                </select>
 
                 <button class="register-btn">Pre-Register Now</button>
                 <button class="register-btn">Call us +91 985678463</button>
-                <button class="register-btn">Whatsapp Now</button>
+                <button class="register-btn-wsp">
+                    <i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i>&nbsp; &nbsp; Whatsapp
+                    Now</button>
+                <div class="callpng">
+                    <img src="call.png" alt="img">
+                </div>
             </form>
         </div>
 
-    </div> -->
+    </div>
+</aside>
+
+<body>
+    
+
+
+
+   
     <div class="leftscroll">
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="bg-circle-1"> a</div>
+        <div class="bg-circle-2"> a</div>
+        <div class="bg-circle-3"> a</div>
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
 
-        <main>
-            <div class="banner">
-                <h1>Headline</h1>
+        <div class="popup-container" id="popup">
 
-                <div class="card">
+            <div class="popup-header">
+                <span>Register Here</span>
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+            </div>
+
+            <div class="popup-content">
+                <input type="text" placeholder="Name">
+                <input type="tel" placeholder="Mobile No">
+                <input type="email" placeholder="E-Mail Address">
+                <button>Pre-Register Now</button>
+            </div>
+                
+        </div>
+
+        <div class="banner">
+            <header>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Amenities</a></li>
+                        <li><a href="#" class="btnpopup" id="overlay" onclick="openPopup()">Download Brochure</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- <h1>Headline</h1> -->
+
+            <!-- <div class="card">
                     <h3 style="color: #0050c0; font-weight: 700; padding: 10px;font-size: 24px;">BOOKING OPEN</h3>
                     <h2>Prestige Siddhartha Vihar</h2>
                     <p class="subtitle">At Indirapuram Extension Siddharth Vihar, Ghaziabad</p>
@@ -86,58 +113,381 @@
                     <p>Premium 2, 3, 4 & 5 BHK Apartments <br> Starting Price</p>
                     <p class="price">₹ 1.64 Cr* Onwards</p>
                     <a href="#" class="button">Enquire Now</a>
+                </div> -->
+        </div>
+
+        <!-- ------------------------------ -->
+
+        <div class="stock-ticker">
+            <ul>
+                
+               
+                <li>
+                    <span class="company">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, debitis adipisci error odio possimus fugit. Atque, aliquam dicta hic vitae quis quaerat ab sapiente nisi? Esse totam at a, repudiandae, sunt voluptate velit, consequatur provident praesentium sapiente eligendi quaerat et beatae harum culpa nemo. Similique dolor id libero corporis fuga facere voluptates! Quae dolores molestiae provident a ipsa delectus beatae iure rerum accusantium in? Similique tenetur</span>
+
+                </li>
+
+               
+            </ul>
+            <!-- ----------------------- -->
+          
+    
+        </div>
+    
+
+        <!-- ------------------------------ -->
+
+        <div class="section2">
+            <h1>Heading 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur libero, atque omnis
+                perspiciatis sit. Nihil doloribus temporibus tempore aliquid hic officia? Rem natus unde quibusdam
+                dolore blanditiis beatae vero. A temporibus est rem amet rerum ad nulla nostrum laboriosam debitis
+                animi. Eveniet corporis, deserunt eos ipsa ab cupiditate quis explicabo sit sunt commodi eaque
+                similique natus amet ad necessitatibus eum ex harum earum. Minima asperiores exercitationem expedita
+                maxime porro laboriosam, voluptas error necessitatibus optio eos officia ea saepe doloremque. Error
+                culpa maxime id enim, nobis ipsum inventore? Minus, officiis odit. Id explicabo voluptatibus
+                dignissimos animi, sint est ipsa ad sequi voluptas iusto laborum autem saepe sunt iure assumenda
+                ipsum tempora voluptate cupiditate repellendus repudiandae. Est, similique temporibus! Adipisci
+                soluta harum, deserunt ab, fugiat alias est aspernatur quos saepe cumque accusantium sunt vitae
+                tempora at corrupti excepturi libero eveniet nostrum doloremque mollitia dolore hic quasi quod. At
+                dignissimos non, quae exercitationem error blanditiis mollitia incidunt, totam optio suscipit illo
+                necessitatibus animi beatae. Quasi sint, optio atque ipsam placeat vero veritatis excepturi,
+                consequatur alias cupiditate mollitia sunt autem eligendi labore possimus, delectus officia odit
+                quibusdam. Ad, asperiores. Ullam nam repellendus porro fuga rerum maxime iste blanditiis!
+                Distinctio, enim nemo! Saepe blanditiis a doloremque eveniet incidunt ipsam obcaecati expedita
+                pariatur reprehenderit fugiat odit, est at quod, eius delectus, quos numquam vitae id alias ratione!
+                At temporibus voluptatum, aliquam iusto, velit nesciunt nulla doloribus praesentium consequuntur rem
+                perferendis cum sapiente qui, culpa animi veritatis eos dignissimos! Exercitationem corporis
+                accusamus fuga facilis, aliquid magni?</p>
+        </div>
+
+        <div class="section3">
+            <div class="box1">
+
+                <div class="content1">
+                    <img src="image1.png" alt="img">
+                </div>
+
+                <div class="content1">
+                    <img src="image1.png" alt="img">
+                </div>
+
+                <div class="content1">
+                    <img src="image1.png" alt="img">
+                </div>
+
+                <div class="content1">
+                    <img src="image1.png" alt="img">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section4">
+            <h1>Unit, Clusture & Master Layout</h1>
+            <div>
+                <a href="#">2 BHK ELITE</a>
+                <span>|</span>
+                <a href="#">3 BHK DELUXE</a>
+                <span>|</span>
+                <a href="#">4 BHK DELUXE</a>
+            </div>
+
+            <div class="boxbhk">
+                <img src="image1.png" alt="img">
+
+            </div>
+        </div>
+
+        <div class="section5">
+            <h1>Heading 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur libero, atque omnis
+                perspiciatis sit. Nihil doloribus temporibus tempore aliquid hic officia? Rem natus unde quibusdam
+                dolore blanditiis beatae vero. A temporibus est rem amet rerum ad nulla nostrum laboriosam debitis
+                animi. Eveniet corporis, deserunt eos ipsa ab cupiditate quis explicabo sit sunt commodi eaque
+                similique natus amet ad necessitatibus eum ex harum earum. Minima asperiores exercitationem expedita
+                maxime porro laboriosam, voluptas error necessitatibus optio eos officia ea saepe doloremque. Error
+                culpa maxime id enim, nobis ipsum inventore? Minus, officiis odit. Id explicabo voluptatibus
+                dignissimos animi, sint est ipsa ad sequi voluptas iusto laborum autem saepe sunt iure assumenda
+                ipsum tempora voluptate cupiditate repellendus repudiandae. Est, similique temporibus! Adipisci
+                soluta harum, deserunt ab, fugiat alias est aspernatur quos saepe cumque accusantium sunt vitae
+                tempora at corrupti excepturi libero eveniet nostrum doloremque mollitia dolore hic quasi quod. At
+                dignissimos non, quae exercitationem error blanditiis mollitia incidunt, totam optio suscipit illo
+                necessitatibus animi beatae. Quasi sint, optio atque ipsam placeat vero veritatis excepturi,
+                consequatur alias cupiditate mollitia sunt autem eligendi labore possimus, delectus officia odit
+                quibusdam. Ad, asperiores. Ullam nam repellendus porro fuga rerum maxime iste blanditiis!
+                Distinctio, enim nemo! Saepe blanditiis a doloremque eveniet incidunt ipsam obcaecati expedita
+                pariatur reprehenderit fugiat odit, est at quod, eius delectus, quos numquam vitae id alias ratione!
+                At temporibus voluptatum, aliquam iusto, velit nesciunt nulla doloribus praesentium consequuntur rem
+                perferendis cum sapiente qui, culpa animi veritatis eos dignissimos! Exercitationem corporis
+                accusamus fuga facilis, aliquid magni?</p>
+            <h3> Lorem Ipsume Heading</h3>
+            <div class="item-container">
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Air Conditioning
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Barbeque
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Dryer
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Golf Cource
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Gym
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Laundry
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Air Conditioning
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Barbeque
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Dryer
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Golf Cource
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Gym
+                </div>
+                <div class="item1">
+                    <i class="fa-regular fa-circle-check" style="color: #19b84e;"></i>
+                    &nbsp Laundry
+                </div>
+            </div>
+        </div>
+
+        <div class="section6">
+            <div class="video-sec">
+
+                <div class="video">
+                    <video src="video/video1.mp4" width="600" height="300" controls autoplay>
+                    </video>
+                </div>
+
+                <div class="video-des">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt debitis qui voluptas error neque distinctio repellendus obcaecati itaque. Error odit perspiciatis unde earum tenetur, repudiandae repellendus iusto debitis at! Qui?
                 </div>
             </div>
 
-            <div class="section2">
-                <h1>Heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequuntur libero, atque omnis
-                    perspiciatis sit. Nihil doloribus temporibus tempore aliquid hic officia? Rem natus unde quibusdam
-                    dolore blanditiis beatae vero. A temporibus est rem amet rerum ad nulla nostrum laboriosam debitis
-                    animi. Eveniet corporis, deserunt eos ipsa ab cupiditate quis explicabo sit sunt commodi eaque
-                    similique natus amet ad necessitatibus eum ex harum earum. Minima asperiores exercitationem expedita
-                    maxime porro laboriosam, voluptas error necessitatibus optio eos officia ea saepe doloremque. Error
-                    culpa maxime id enim, nobis ipsum inventore? Minus, officiis odit. Id explicabo voluptatibus
-                    dignissimos animi, sint est ipsa ad sequi voluptas iusto laborum autem saepe sunt iure assumenda
-                    ipsum tempora voluptate cupiditate repellendus repudiandae. Est, similique temporibus! Adipisci
-                    soluta harum, deserunt ab, fugiat alias est aspernatur quos saepe cumque accusantium sunt vitae
-                    tempora at corrupti excepturi libero eveniet nostrum doloremque mollitia dolore hic quasi quod. At
-                    dignissimos non, quae exercitationem error blanditiis mollitia incidunt, totam optio suscipit illo
-                    necessitatibus animi beatae. Quasi sint, optio atque ipsam placeat vero veritatis excepturi,
-                    consequatur alias cupiditate mollitia sunt autem eligendi labore possimus, delectus officia odit
-                    quibusdam. Ad, asperiores. Ullam nam repellendus porro fuga rerum maxime iste blanditiis!
-                    Distinctio, enim nemo! Saepe blanditiis a doloremque eveniet incidunt ipsam obcaecati expedita
-                    pariatur reprehenderit fugiat odit, est at quod, eius delectus, quos numquam vitae id alias ratione!
-                    At temporibus voluptatum, aliquam iusto, velit nesciunt nulla doloribus praesentium consequuntur rem
-                    perferendis cum sapiente qui, culpa animi veritatis eos dignissimos! Exercitationem corporis
-                    accusamus fuga facilis, aliquid magni?</p>
+            <!-- Swiper -->
+
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 1">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 2">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 3">
+    
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 7">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 8">
+                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 9">
+                        
+                    </div>
+    
+                </div>
+                
+                <div class="buttons">
+                    <button class="button prev"><i class="fa-solid fa-chevron-left fa-2xl" style="color: #ffffff;"></i></button>
+                    <button class="button next"><i class="fa-solid fa-chevron-right fa-2xl" style="color: #ffffff;"></i></button>
+                </div>
             </div>
 
-            <div class="section3">
-                <div class="box1">
 
-                    <div class="content1">
-                        <img src="pngegg.png" alt="">
+        </div>
+
+        <div class="faq-container">
+            <h2>FAQ</h2>
+
+            <div class="faq-grid">
+                <!-- Left Column -->
+                <div class="faq-section">
+                    <div class="faq-title">– Where are you located?</div>
+                    <div class="faq-answer">
+                        Gulf Coast Website Design is located in Cypress, Texas – a suburb of Houston. We are proud
+                        members
+                        of the CyFair Chamber of Commerce and Houston Better Business Bureau.
                     </div>
 
-                    <div class="content1">
-                        <p>Ashank Verma</p>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Why should I choose Gulf Coast Website Design?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            We offer professional, modern, and effective website designs tailored to your business
+                            needs.
+                        </div>
                     </div>
 
-                    <div class="content1">
-                        <p>Akarsh Rastogi</p>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can you help me if I’m not in Houston?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes! We work with clients across different locations and provide remote support.
+                        </div>
                     </div>
 
-                    <div class="content1">
-                        <p>Akarsh Rastogi</p>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are the essential elements of a website design in 2025 and beyond?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Responsive design, fast loading speed, SEO optimization, user-friendly UI/UX, and
+                            mobile-first
+                            approach.
+                        </div>
                     </div>
 
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How much does it cost to design a professional website?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            The cost varies based on features and complexity. Contact us for a quote.
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Right Column -->
+                <div class="faq-section">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is lead generation in digital marketing?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Lead generation involves attracting potential customers through various online strategies
+                            such
+                            as content marketing, SEO, and paid ads.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How can my website generate more leads?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            By optimizing SEO, improving user experience, and adding clear CTAs (Call-To-Actions).
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are the most effective lead generation strategies for websites?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Using high-quality content, SEO, social media marketing, and email campaigns.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>How does SEO contribute to lead generation?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            SEO improves website visibility on search engines, attracting more organic traffic and
+                            potential
+                            leads.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is the role of landing pages in lead generation?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Landing pages are designed to capture visitor information and turn them into leads.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What is a call-to-action (CTA) and why is it important?</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            A CTA is a button or link that prompts visitors to take a specific action, increasing
+                            conversions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div class="footer-text">
+                <h1>Footer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor quisquam, amet sequi
+                    consequuntur labore corporis, numquam reprehenderit harum quo vel, aut aliquid! Deleniti cupiditate
+                    ex a, quam expedita earum, officia accusantium dolore maiores fugiat ipsa officiis veritatis
+                    reiciendis totam porro molestiae quaerat iusto eaque commodi eos voluptatibus dignissimos. Ipsam
+                    repudiandae in dolorum non iste alias amet impedit! Quasi culpa esse veritatis vitae, laborum fugiat
+                    laboriosam, quibusdam, iure aliquid iusto nesciunt ea! Sit enim autem tenetur pariatur, modi aperiam
+                    beatae animi doloremque molestiae blanditiis aliquid esse sunt nesciunt repudiandae, voluptatem
+                    assumenda corporis voluptas? Sapiente quasi, at quis molestias quo earum.</p>
+            </div>
+            <div class="social-media-icon">
+                <h3>Social Media Handles</h3>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-2xl"
+                            style="color: #005eff;"></i></a>
+
+                    <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter fa-2xl"
+                            style="color: #74C0FC;"></i></a>
+
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl"
+                            style="color: #bd0000;"></i></a>
+
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl"
+                            style="color: #0082e6;"></i></a>
+
+                </div>
+            </div>
 
 
-        </main>
+        </div>
+
+        <div class="copyright">
+            <p>©️ All Copyrights Reserved</p>
+        </div>
+
+
     </div>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 
