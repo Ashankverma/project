@@ -1,25 +1,23 @@
-const slides = document.querySelector('.slides');
-const slideCount = document.querySelectorAll('.slide').length;
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+
+const sliders = document.querySelectorAll('.slider-container .slides');
+const slideCount = document.querySelector('.slider-container .slides').children.length;
 
 let currentIndex = 0;
+let intervalTime = 3000; // Auto-slide every 3 seconds
 
 function updateSlidePosition() {
-  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    sliders.forEach((slides) => {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
 }
 
-nextButton.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % slideCount;
-  updateSlidePosition();
-});
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateSlidePosition();
+}
 
-prevButton.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + slideCount) % slideCount;
-  updateSlidePosition();
-});
-
-
+// Start auto-slide
+setInterval(nextSlide, intervalTime);
 
 
 // -----------------------------------------------------------------

@@ -324,6 +324,7 @@ p{
 }
 
 .callback-btn {
+    text-decoration: none;
     background: rgb(0, 73, 137);
     color: white;
     border: none;
@@ -387,9 +388,12 @@ input, select {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
     margin-top: 20px;
 }
-.register-btn-wsp{
+.register-btn-wsp{text-decoration: none;
     background: rgb(9, 155, 19);
     color: white;
     border: none;
@@ -399,6 +403,7 @@ input, select {
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .register-btn:hover, .callback-btn:hover {
@@ -624,6 +629,11 @@ input, select {
     border-radius: 15px;
 }
 
+.boxbhk img:hover{
+    scale: 106%;
+    transition: 0.4s ease-out;
+}
+
 /* Section 5----------------------------------------- */
 
 .section5 {
@@ -675,7 +685,7 @@ input, select {
     border-radius: 20px;
     /* margin: 10px; */
     background-color: aliceblue;
-    width: 60%;
+    width: 100%;
     height: 38vh;
     overflow: hidden;
     box-shadow: grey 5px 5px 10px;
@@ -683,12 +693,14 @@ input, select {
 
 .video video{
     object-fit:fill;
+    width:100%;
+    height:100%;
 }
 
-.video-des{
+/* .video-des{
     padding: 0px 10px;
     border-radius: 20px;
-    /* margin: 10px; */
+    margin: 10px;
     background-color: aliceblue;
     width: 40%;
     height: 38vh;
@@ -696,46 +708,50 @@ input, select {
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(222, 222, 222);
-}
+} */
 
 
 
 .slider-container {
+    /* box-sizing: border-box; */
     /* display: flex; */
     /* gap: 10px; */
-    height: 200px;
+    height: 300px;
+    /* padding:10px; */
     box-sizing: border-box;
     width: 100%;
-    /* max-width: 100%; */
+    max-width: 100%;
     overflow: hidden;
     position: relative;
     z-index: 1;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
     /* overflow: hidden; */
   }
 
   .slides {
-
     display: flex;
-    /* width: 100%; */
-    gap: 10px;
-    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    /* gap: 10px; */
+    box-sizing: border-box;
+    transition: transform 1s ease-in-out;
   }
 
   .slide {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    height: auto;
     min-width: 100%;
     overflow: hidden;
   }
 
   .slide img {
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
   }
 
@@ -764,7 +780,6 @@ input, select {
 
 
 
-
 /* Section 7--------------------------------------------- */
 
 .faq-container {
@@ -775,17 +790,22 @@ input, select {
     padding: 20px 100px;
     border-radius: 10px;
 }
-h2 {
-    text-align: center;
-}
+
 .faq-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 .faq-section {
-    background: #eaeaea;
+    /* background: #eaeaea; */
     padding: 20px;
+    border-radius: 8px;
+}
+
+.faq-section-right-coloum{
+    /* background: #eaeaea; */
+    /* padding: 20px; */
+    padding-top: 50px;
     border-radius: 8px;
 }
 .faq-title {
@@ -811,7 +831,7 @@ h2 {
     display: none;
     padding: 10px;
     font-size: 14px;
-    background: #ffffff;
+    background: #e1e1e1;
     border-radius: 5px;
     margin-top: 5px;
 }
@@ -825,9 +845,8 @@ h2 {
 /* Footer-------------------------------------------- */
 
 .footer{
-    background-color: rgb(232, 244, 255);
-    /* height: 50vh; */
-    padding: 60px;
+    background-color: rgba(0, 73, 137, 0.062);
+    padding: 100px;
     display: flex;
     justify-content: space-between;
 
@@ -871,7 +890,7 @@ h2 {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #1f1287;
+    background-color: rgb(0, 73, 137);
     color: rgb(255, 255, 255);
 }
 
