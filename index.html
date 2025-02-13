@@ -11,7 +11,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"   />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 
@@ -95,22 +99,64 @@
 
         <div class="banner">
             <header>
-
                 <nav>
-
                     <ul class="navbar">
                         <div class="logo"><img src="logo.png" alt="logo"></div>
-                        <div class="nav-links">
-                            <li><a href="#" class="active">Home</a></li>
-                            <li><a href="#" class="scroll" id="scroll" onclick="scroll()">About us</a></li>
+
+                        <div class="navlinks" id="navlinks">
+                             <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#" class="scroll">About us</a></li>
                             <li><a href="#">Contact us</a></li>
                             <li><a href="#">Amenities</a></li>
                             <li><a href="#" class="btnpopup" id="overlay" onclick="openPopup()">Download Brochure</a>
                             </li>
                         </div>
-                    </ul>
+                        <!-- ---------------------------------------------------- -->
+
+                        <div class="hamburger" onclick="btnSidebar()"><i class="fa-solid fa-bars fa-2xl"
+                            style="color: #ffffff;"></i></div>
+                        <!-- Sidebar -->
+                        <div class="sidebar" id="sidebar">
+                            
+                            <a href="#" class="close-btn2" onclick="btnSidebar()">
+                                <i class="fa-solid fa-xmark" style="color: #ffffff;"></i></a>
+                            <a href="#">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Amenities</a>
+                            <a href="#">Download Brochure</a>
+                        </div>
+                </nav>
+
+
+
+
+                
+                </ul>
                 </nav>
             </header>
+
+            <div class="banner-text">
+                <p class="banner-text-h1">Booking Open</p>
+                <p class="banner-text-h2">Prestige Siddhartha Vijhar</p>
+                <p class="banner-text-h3">At Indirapuram Extension Siddharth Vihar, Ghaziabad</p>
+                <p class="banner-text-h4">Land Area : 64 Acres ApproxTowers: 13 &nbsp; &nbsp;| &nbsp; &nbsp; Apartments:
+                    4647Floors: 3B+G+41 &nbsp; &nbsp; | &nbsp; &nbsp;Villas: 119Serene View of Lake & Hills Nearby</p>
+            </div>
+
+            <div class="banner-btns">
+                <div class="upper-btns">
+                    <button class="btn">Button 1</button>
+                    <button class="btn">Button 2</button>
+                    <button class="btn">Button 3</button>
+                </div>
+                <div class="lower-btns">
+                    <button class="btn">BUtton 4</button>
+                    <button class="btn">Button 5</button>
+                    <button class="btn">Button 6</button>
+                </div>
+
+            </div>
 
         </div>
 
@@ -296,17 +342,26 @@
             <div class="slider-container">
                 <div class="slides">
                     <div class="slide">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 1">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 2">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 3">
+                        <img src="RE1.jpg" alt="Image 1">
+                        <img src="RE2.jpg" alt="Image 2">
+                        <img src="RE3.jpg" alt="Image 3">
 
                     </div>
                     <div class="slide">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 7">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 8">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 9">
+                        <img src="RE4.jpg" alt="Image 7">
+                        <img src="RE5.jpg" alt="Image 8">
+                        <img src="RE6.jpg" alt="Image 9">
 
                     </div>
+
+                    <div class="slide">
+                        <img src="RE1.jpg" alt="Image 7">
+                        <img src="RE2.jpg" alt="Image 8">
+                        <img src="RE3.jpg" alt="Image 9">
+
+                    </div>
+
+
 
                 </div>
                 <!--                 
@@ -318,25 +373,39 @@
             <div class="slider-container">
                 <div class="slides">
                     <div class="slide">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 1">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 2">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 3">
+                        <img src="RE4.jpg" alt="Image 1">
+                        <img src="RE5.jpg" alt="Image 2">
+                        <img src="RE6.jpg" alt="Image 3">
 
                     </div>
                     <div class="slide">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 7">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 8">
-                        <img src="https://picsum.photos/seed/picsum/200/300" alt="Image 9">
+                        <img src="RE1.jpg" alt="Image 7">
+                        <img src="RE2.jpg" alt="Image 8">
+                        <img src="RE3.jpg" alt="Image 9">
 
                     </div>
 
+                    <div class="slide">
+                        <img src="RE1.jpg" alt="Image 7">
+                        <img src="RE2.jpg" alt="Image 8">
+                        <img src="RE3.jpg" alt="Image 9">
+
+                    </div>
+
+
+
+
                 </div>
+
+
 
                 <!-- <div class="buttons">
                     <button class="button prev"><i class="fa-solid fa-chevron-left fa-2xl" style="color: #ffffff;"></i></button>
                     <button class="button next"><i class="fa-solid fa-chevron-right fa-2xl" style="color: #ffffff;"></i></button>
                 </div> -->
             </div>
+
+
 
 
 
@@ -475,18 +544,18 @@
         <div class="footer">
 
             <div class="footer-text">
-                <h1>Footer</h1>
+                <!-- <h1>Footer</h1> -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolor quisquam, amet sequi
                     consequuntur labore corporis, numquam reprehenderit harum quo vel, aut aliquid! Deleniti cupiditate
                     ex a, quam expedita earum, officia accusantium dolore maiores fugiat ipsa officiis veritatis
                     reiciendis totam porro molestiae quaerat iusto eaque commodi eos voluptatibus dignissimos. Ipsam
-                    repudiandae in dolorum non iste alias amet impedit! Quasi culpa esse veritatis vitae, laborum fugiat
-                    laboriosam, quibusdam, iure aliquid iusto nesciunt ea! Sit enim autem tenetur pariatur, modi aperiam
-                    beatae animi doloremque molestiae blanditiis aliquid esse sunt nesciunt repudiandae, voluptatem
-                    assumenda corporis voluptas? Sapiente quasi, at quis molestias quo earum.</p>
+                    <!-- repudiandae in dolorum non iste alias amet impedit! Quasi culpa esse veritatis vitae, laborum fugiat
+                laboriosam, quibusdam, iure aliquid iusto nesciunt ea! Sit enim autem tenetur pariatur, modi aperiam
+                beatae animi doloremque molestiae blanditiis aliquid esse sunt nesciunt repudiandae, voluptatem
+                assumenda corporis voluptas? Sapiente quasi, at quis molestias quo earum.</p> -->
             </div>
             <div class="social-media-icon">
-                <h3>Social Media Handles</h3>
+                <p>Connect with us on</p>
                 <div class="icon">
                     <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-2xl"
                             style="color: #005eff;"></i></a>

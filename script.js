@@ -14,6 +14,7 @@ function updateSlidePosition() {
 function nextSlide() {
     currentIndex = (currentIndex + 1) % slideCount;
     updateSlidePosition();
+    
 }
 
 // Start auto-slide
@@ -59,3 +60,12 @@ function openPopup(){
 
 // -----------------------------------------------------------
 
+function btnSidebar(){
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.left === "-250px" || sidebar.style.left === "") {
+        sidebar.style.left = "0";
+    } else {
+        sidebar.style.left = "-250px";
+    }
+
+}
